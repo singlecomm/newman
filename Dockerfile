@@ -16,6 +16,6 @@ ADD . /newman
 
 WORKDIR /newman
 
-RUN chmod +x start.sh
+RUN chmod +x /newman/start.sh
 
-CMD start.sh
+CMD /newman/start.sh
