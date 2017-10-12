@@ -4,7 +4,7 @@ EXPOSE 8089
 
 ENV NEWMAN_VERSION 3.8.1
 
-RUN apk add --update bash nodejs nodejs-npm && node --version && npm install -g newman@${NEWMAN_VERSION}
+RUN node --version && npm install -g newman@${NEWMAN_VERSION}
 
 ADD . /newman
 
